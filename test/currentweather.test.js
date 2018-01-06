@@ -10,7 +10,7 @@ describe('CurrentWeather', () => {
     wrapper = shallow(<CurrentWeather />)
   })
 
-  it('should exist', () => {
+  it.skip('should exist', () => {
 
     expect(wrapper).toBeDefined()
   })

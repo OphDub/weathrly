@@ -10,7 +10,7 @@ describe('Api', () => {
     wrapper = shallow(<Api />)
   })
 
-  it('should exist', () => {
+  it.skip('should exist', () => {
 
     expect(wrapper).toBeDefined()
   })

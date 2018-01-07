@@ -1,7 +1,14 @@
 .search-bar {
   padding: 10px;
+  width: 150px;
+}
+
+.search {
   position: absolute;
   right: 20px;
   top: 20px;
-  width: 150px;
+}
+
+.suggest {
+  text-transform: uppercase;
 }

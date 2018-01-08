@@ -34,6 +34,6 @@ describe('SevenHourForecast', () => {
 
   it('should render a 7 Card components', () => {
     expect(wrapper.find('Card').length).toEqual(7);
-  })
+  });
 
 })

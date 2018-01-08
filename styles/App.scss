@@ -5,3 +5,19 @@
 .title {
   margin: 20px;
 }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .search {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.forecast-buttons {
+  display: flex;
+  justify-content: center;
+}

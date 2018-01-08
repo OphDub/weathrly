@@ -11,8 +11,7 @@ describe('Api', () => {
   })
 
   it.skip('should exist', () => {
-
-    expect(wrapper).toBeDefined()
+    expect(wrapper).toBeDefined();
   })
 
 })

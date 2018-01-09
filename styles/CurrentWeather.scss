@@ -1,28 +1,20 @@
-.left,
-.right {
-  display: inline-block;
-  text-align: center;
-  margin: 30px 0px;
-  width: 40%;
-  min-width: 238px;
-}
-
 .current-weather {
   text-align: center;
 }
 
+.left,
+.right {
+  display: inline-block;
+  margin: 30px 0px;
+  min-width: 238px;
+  text-align: center;
+  width: 40%;
+}
+
+
 .location {
   font-size: 26px;
   margin-bottom: 10px;
-}
-
-.icon {
-  min-height: 175px;
-  margin: 30px;
-}
-
-.right p {
-  font-size: 24px;
 }
 
 .temp {
@@ -36,6 +28,15 @@
 
 .low {
   margin-bottom: 20px;
+}
+
+.right p {
+  font-size: 24px;
+}
+
+.icon {
+  margin: 30px;
+  min-height: 175px;
 }
 
 @media screen and (max-width: 475px) {

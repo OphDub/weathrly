@@ -1,8 +1,8 @@
 # Project: Weathrly
 
-Primary goal for this project was to create a weather application that pulled data from Weather Underground:
+Primary goal for this project was to create a weather application that pulled data from Weather Underground. Wireframe mocks were also created for this project:
 
-Our project spec as assigned was to create an webpage that is able to accept user input for idea cards that are stored locally on the user's machine. This project also establishes some basic foundations for understanding interaction with user data in a limited scope. Each card is assigned a quality that is dynamic and can be changed by the user via an upvote/downvote. All cards should also persist on the page through reload. Users should also be able to make changes to each idea card and have the changes show dynamically without a page reload. Other project requirements are listed below.
+![wireframes](https://github.com/OphDub/weathrly/blob/master/src/Weathrly-wireframes.pdf)
 
 ## Project Requirements
 The project is separated into five phases. Each section breaks down general requirements.
@@ -75,9 +75,22 @@ Optional extensions for this project included:
 * [**Ophus Wong**](https://github.com/ophdub) 
 * [**Michelle Hoffman**](https://github.com/michellehoffman) 
 
-## Acknowledgments
+## Additional Notes
+This repo requires an API key from [WeatherUnderground](https://www.wunderground.com/weather/api/). Api key should be placed in a separate local file using this file path:
 
-* 
+```
+weathrly/lib/Api-key.js
+```
+
+Recommended template for Api-key.js file to function with this repo as follows:
+
+```
+const config = {
+  key: [your Weather UnderGround API key here],
+}
+
+module.exports = config;
+```
 
 ## Installing this Repo
 
@@ -111,5 +124,3 @@ To run tests in Node:
 npm test
 ```
 
-
-![wireframes](https://github.com/OphDub/weathrly/blob/master/src/Weathrly-wireframes.pdf)

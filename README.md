@@ -112,4 +112,4 @@ npm test
 ```
 
 
-![wireframes](https://github.com/OphDub/weathrly/blob/add-wireframes/src/Weathrly-wireframes.pdf)
+![wireframes](https://github.com/OphDub/weathrly/blob/master/src/Weathrly-wireframes.pdf)

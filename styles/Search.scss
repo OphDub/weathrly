@@ -12,3 +12,17 @@
 .suggest {
   text-transform: uppercase;
 }
+
+form {
+  display: flex;
+  padding: 20px;
+}
+
+input {
+  outline: none;
+}
+
+button:hover {
+  background-color: blue;
+  color: white;
+}

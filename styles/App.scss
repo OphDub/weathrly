@@ -15,3 +15,7 @@ header {
 .forecast-buttons {
   text-align: center;
 }
+
+.forecast-buttons:active {
+  background-color: blue;
+}

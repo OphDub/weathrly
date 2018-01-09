@@ -8,7 +8,7 @@ describe('CurrentWeather', () => {
 
   beforeEach(() => {
     wrapper = shallow(<CurrentWeather weather={data} />)
-  })
+  });
 
   it('should exist', () => {
     expect(wrapper).toBeDefined();

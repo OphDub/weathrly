@@ -1,20 +1,14 @@
 .left,
 .right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: inline-block;
+  text-align: center;
   margin: 30px 0px;
   width: 40%;
+  min-width: 238px;
 }
 
 .current-weather {
   text-align: center;
-}
-
-.curr-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 .location {
@@ -24,8 +18,11 @@
 
 .icon {
   min-height: 175px;
-  display: flex;
-  align-self: center;
+  margin: 30px;
+}
+
+.right p {
+  font-size: 24px;
 }
 
 .temp {
@@ -39,4 +36,14 @@
 
 .low {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 475px) {
+  .left {
+    margin-bottom: 0;
+  }
+
+  .icon {
+    margin-top: 0;
+  }
 }

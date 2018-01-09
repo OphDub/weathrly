@@ -82,6 +82,7 @@ This repo requires an API key from [WeatherUnderground](https://www.wunderground
 weathrly/lib/Api-key.js
 ```
 
+
 Recommended template for Api-key.js file to function with this repo as follows:
 
 ```
@@ -91,6 +92,15 @@ const config = {
 
 module.exports = config;
 ```
+
+It also recommended that api keys are not exposed on a public repo and should be added to your local gitignore. Resources used for this project include:
+
+* [Atlassian Git Ignore Tutorial](https://www.atlassian.com/git/tutorials/gitignore)
+* [derzorngottes' gist](https://gist.github.com/derzorngottes/3b57edc1f996dddcab25)
+
+## Acknowledgements
+
+* [derzorngottes](https://github.com/derzorngottes): Gist on ignoring API keys
 
 ## Installing this Repo
 

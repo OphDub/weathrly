@@ -2,20 +2,16 @@
   margin: 0;
 }
 
-.title {
-  margin: 20px;
-}
-
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.forecast-buttons {
-  text-align: center;
+.title {
+  margin: 20px;
 }
 
-.forecast-buttons:active {
-  background-color: blue;
+.forecast-buttons {
+  text-align: center;
 }

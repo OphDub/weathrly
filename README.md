@@ -2,7 +2,7 @@
 
 Primary goal for this project was to create a weather application that pulled data from Weather Underground. Wireframe mocks were also created for this project:
 
-[embed]https://github.com/OphDub/weathrly/blob/master/src/Weathrly-wireframes.pdf[/embed]
+[wireframes](https://github.com/OphDub/weathrly/blob/master/src/Weathrly-wireframes.pdf)
 
 ## Project Requirements
 The project is separated into five phases. Each section breaks down general requirements.

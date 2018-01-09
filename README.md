@@ -31,4 +31,4 @@ npm test
 ```
 
 
-<img src="./src/Weathrly-wireframes.pdf" />
+![wireframes](https://github.com/OphDub/weathrly/blob/add-wireframes/src/Weathrly-wireframes.pdf)

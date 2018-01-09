@@ -1,14 +1,21 @@
 .search-bar {
-  padding: 10px;
   width: 150px;
 }
 
 .search {
-  position: absolute;
-  right: 20px;
-  top: 20px;
+  display: flex;
+  padding: 20px;
 }
 
 .suggest {
   text-transform: uppercase;
+}
+
+input {
+  outline: none;
+}
+
+button:hover {
+  background-color: blue;
+  color: white;
 }

@@ -29,3 +29,6 @@ To run tests in Node:
 ```js
 npm test
 ```
+
+
+<img src="./src/Weathrly-wireframes.pdf" />

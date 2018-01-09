@@ -53,7 +53,7 @@ Search input should consist of the following:
 User's location should persist after page refresh.
 
 #### Phase 5: Auto-Complete
-Application should have an auto-complete for the Search input. The auto-complete functionality is to be imported form a separate project which we worked on. Auto-complete should provide suggestions to the user based on city/state or zip code.
+Application should have an auto-complete for the Search input. The auto-complete functionality is to be imported form a separate project ([Complete Me](https://github.com/OphDub/complete-me)). Auto-complete should provide suggestions to the user based on city/state or zip code.
 
 #### Extensions
 Optional extensions for this project included:

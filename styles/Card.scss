@@ -1,4 +1,14 @@
 .card {
   border: 1px solid black;
   text-align: center;
+  /*height: 150px;*/
+  justify-content: center;
+  width: 11.5%;
+  min-width: 100px;
+  margin: 10px;
+  padding: 30px 0;
+}
+
+.card img {
+  margin: 10px 0;
 }

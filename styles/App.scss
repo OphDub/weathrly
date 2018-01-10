@@ -2,12 +2,6 @@
   margin: 0;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .main {
   display: flex;
   flex-direction: row;
@@ -20,4 +14,16 @@ header {
 
 .forecast-buttons {
   text-align: center;
+}
+
+.no-weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.has-weather {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

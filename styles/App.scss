@@ -2,10 +2,10 @@
   margin: 0;
 }
 
-header {
+.main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .title {
@@ -14,4 +14,16 @@ header {
 
 .forecast-buttons {
   text-align: center;
+}
+
+.no-weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.has-weather {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

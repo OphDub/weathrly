@@ -1,19 +1,17 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import App from '../lib/App.js';
-import { data } from '../lib/data.js';
+import { data } from './data.js';
 import '../styles/App.scss';
 import LocalStorageMock from '../lib/mockLocalStorage.js'
+
+global.localStorage = new LocalStorageMock();
 
 describe('App', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = shallow(<App />)
-
-    // let mockLS = new LocalStorageMock();
-    // mockLS.setItem(this.state.location);
-    // let parsedObj = mockLS.getItem('city');
   });
 
   it('should exist', () => {
@@ -44,9 +42,8 @@ describe('App', () => {
     expect(wrapper.state().showError).toEqual(false);
   })
 
-  it('should render div, h1, Welcome, and Search components by default', () => {
+  it('should render div, Welcome, and Search components by default', () => {
     expect(wrapper.find('div').length).toEqual(1);
-    expect(wrapper.find('h1').length).toEqual(1);
     expect(wrapper.find('Welcome').length).toEqual(1);
     expect(wrapper.find('Search').length).toEqual(1);
   });

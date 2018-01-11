@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import Error from '../lib/Error.js';
-import { data } from '../lib/data.js';
+import { data } from '../test/data.js';
 
 describe('TenDayForecast', () => {
   let wrapper;

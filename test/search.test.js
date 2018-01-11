@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import Search from '../lib/Search.js';
-import { data } from '../lib/data.js';
+import { data } from '../test/data.js';
 import { Trie } from '@ophdub/complete-me';
 import LocalStorage from '../lib/mockLocalStorage.js';
 

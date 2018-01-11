@@ -35,8 +35,7 @@ describe('CurrentWeather', () => {
     expect(wrapper.find('.high').text()).toEqual('High: 51 °F');
     expect(wrapper.find('.low').text()).toEqual('Low: 32 °F');
     expect(wrapper.find('.summary').text()).toEqual('Sun and clouds mixed. High 51F. Winds NE at 10 to 15 mph.');
-    expect(wrapper.find('.condition').text()).toEqual('Mostly Cloudy')
-
-  })
+    expect(wrapper.find('.condition').text()).toEqual('Mostly Cloudy');
+  });
 
 })

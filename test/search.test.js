@@ -1,15 +1,16 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import Search from '../lib/Search.js';
-import { data } from '../lib/data.js';
+import { data } from '../test/data.js';
 import { Trie } from '@ophdub/complete-me';
+import LocalStorage from '../lib/mockLocalStorage.js';
 
 describe('Search', () => {
   let wrapper;
   const mockFunc = jest.fn();
 
   beforeEach(() => {
-    wrapper = shallow(<Search compareCity={mockFunc}/>)
+    wrapper = mount(<Search compareCity={mockFunc} getWeather={mockFunc}/>)
   })
 
   it('should exist', () => {
@@ -31,10 +32,17 @@ describe('Search', () => {
 
     wrapper.find('input').simulate('change', { target: { value: 'den'}})
 
-    expect(wrapper.find('datalist').length).toEqual(1)
-    expect(wrapper.find('options').length).toEqual(2)
     expect(wrapper.state()).toEqual({ searchLocation: 'den', suggestedCities: ["denver, co", "denton, tx"]})
   });
+
+  it('should also render a datalist with options on change within input', () => {
+    expect(wrapper.state()).toEqual({ searchLocation: '', suggestedCities: []})
+
+    wrapper.find('input').simulate('change', { target: { value: 'den'}})
+
+    expect(wrapper.find('datalist').length).toEqual(1)
+    expect(wrapper.find('option').length).toEqual(2)
+  })
 
   it('should not make suggestions when input is a zip code', () => {
     expect(wrapper.state()).toEqual({ searchLocation: '', suggestedCities: []})
